@@ -1,4 +1,4 @@
-#  iOS 程序启动优化（入口变迁）
+#  iOS 程序入口变化（程序启动优化）
 
 ## [WWDC 2021 Optimizing App Launch](https://developer.apple.com/videos/play/wwdc2019/423/)
 
@@ -18,13 +18,13 @@
 
 * 只有一个主 **window**
 
-* **UIAppDelegate** 统一管理应用生命周期和UI生命周期
+* **UIAppDelegate** 统一管理 **应用生命周期** 和 **UI生命周期**
 
 ### 相关代码
 
 [AppDelegate 初始化程序入口window](./AppEntry/AppDelegate.m);
 
-## iOS 13 and later and Xcode 11 
+## iOS 13 and later and Xcode 11
 
 ![iOS 13 and later App Delegate](./ios13%20and%20later%20App%20Delegate.png)
 
