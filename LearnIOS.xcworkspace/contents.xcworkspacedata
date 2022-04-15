@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftBasics/SwiftBasics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOSClassAndObject/iOSClassAndObject.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Layout/Layout.xcodeproj">
    </FileRef>
    <FileRef
