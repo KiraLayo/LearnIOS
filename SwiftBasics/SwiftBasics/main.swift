@@ -67,3 +67,41 @@ arr[1...2] = ["0", "0"]
 
 print(arr)
 
+func func1(param1: String = "dasd", param2: String) {
+    print(param1)
+    print(param2)
+}
+
+func1(param2: "avs")
+func1(param1: "FF", param2: "String")
+
+actor TemperatureLogger {
+    let label: String
+    var measurements: [Int]
+    private(set) var max: Int
+
+    init(label: String, measurement: Int) {
+        self.label = label
+        self.measurements = [measurement]
+        self.max = measurement
+    }
+}
+
+
+extension TemperatureLogger {
+    func update(with measurement: Int) {
+        measurements.append(measurement)
+        if measurement > max {
+            max = measurement
+        }
+    }
+}
+
+func test() async {
+    let logger = TemperatureLogger(label: "Outdoors", measurement: 25)
+    print(await logger.max)
+    // Prints "25"
+
+    await logger.update(with: 3)
+}
+
